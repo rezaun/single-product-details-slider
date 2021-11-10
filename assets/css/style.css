@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2f75e3;
+}
+
+.product{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.product-small-image{
+    float: left;
+}
+.product-small-image img{
+    height: 92px;
+    margin: 10px 0;
+    display: block;
+    cursor: pointer;
+    opacity: .5;
+}
+.product-small-image img:hover{
+    opacity: 1;
+}
+.img-container{
+    float: right;
+    padding: 10px;
+}
+.img-container img{
+    height: 500px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>single product details slider</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="product">
+        <div class="product-small-image">
+            <img src="assets/images/one.jpg" alt="image one" onclick="makeItBig(this)">
+            <img src="assets/images/two.jpg" alt="image two" onclick="makeItBig(this)">
+            <img src="assets/images/three.jpg" alt="image three" onclick="makeItBig(this)">
+            <img src="assets/images/four.jpg" alt="image four" onclick="makeItBig(this)">
+            <img src="assets/images/five.jpg" alt="image five" onclick="makeItBig(this)">
+        </div>
+        <div class="img-container">
+            <img id="imageBox" src="assets/images/one.jpg" alt="big image">
+        </div>
+    </div>
+    <script>
+        function makeItBig(smallImg) {
+            var fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src
+        }
+    </script>
+</body>
+</html>
